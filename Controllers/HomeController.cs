@@ -25,17 +25,20 @@ namespace StudentProject.Controllers
             var model = _studentRepository.GetAllStudents();
             return View(model);
         }
-        /*
+        
         public ViewResult Details(int? id)
         {
+            /*
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
             {
                 Student = _studentRepository.GetStudent(id ?? 1),
                 PageTitle = "Student Details"
             };
             return View(homeDetailsViewModel);
+            */
+            return View();
         }
-*/
+
         [HttpGet]
         public ViewResult Create()
         {
